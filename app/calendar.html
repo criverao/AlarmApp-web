@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>AlarmApp</title>
+
+    <!-- Vendor css -->
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../lib/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shamcey.css">
+  </head>
+
+  <body>
+
+    <div class="sh-logopanel">
+      <img width="60px" src="../img/clock_retro.png"/>
+      <a href="" class="sh-logo-text">AlarmApp</a>
+      <!--<a id="navicon" href="" class="sh-navicon d-none d-xl-block"><i class="icon ion-navicon"></i></a>-->
+      <a id="naviconMobile" href="" class="sh-navicon d-xl-none"><i class="icon ion-navicon"></i></a>
+    </div>
+
+    <div class="sh-sideleft-menu" >
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="icon ion-ios-bell tx-24 tx-orange"></i>
+            <span>Eventos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <i class="icon ion-android-calendar tx-orange"></i>
+            <span>Calendario</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="nav-link">
+            <i class="icon ion-android-map tx-orange"></i>
+            <span>Mapa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="user.html" class="nav-link">
+            <i class="icon ion-android-person tx-orange"></i>
+            <span>Usuario</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            <i class="icon ion-android-exit tx-orange"></i>
+            <span>Salir</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sh-headpanel">
+
+      <div class="sh-headpanel-left">
+        <div>
+          <h6 class="tx-inverse tx-15 ml-3">Calendario de alarmas</h6>
+        </div>
+      </div>
+
+      <div class="sh-headpanel-right">
+        <div>
+          <h6 class="tx-inverse tx-15 mr-3">John Doe </h6>
+        </div><!-- media-body -->
+        <div class="dropdown dropdown-profile">
+          <a href="" data-toggle="dropdown" class="dropdown-link">
+            <img src="../img/img1.jpg" class="wd-60 rounded-circle" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sh-mainpanel">
+
+      <div class="sh-pagetitle">
+
+        <div class="input-group">
+          <input type="search" class="form-control" placeholder="Buscar">
+          <span class="input-group-btn">
+            <button class="btn"><i class="fa fa-search tx-orange"></i></button>
+          </span>
+        </div>
+
+        <div class="sh-pagetitle-left">
+          <div class="sh-pagetitle-title">
+            <h5 class="tx-gray-700">Calendario</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sh-pagebody">
+        <div class="card bd-white">
+          <div class="card-body pd-30 pd-md-60">
+
+
+            <div class="sh-pagebody">
+
+              <div id="fullCalendar"></div>
+
+            </div><!-- sh-pagebody -->
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/popper.js/popper.js"></script>
+    <script src="../lib/bootstrap/bootstrap.js"></script>
+    <script src="../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../lib/moment/moment.js"></script>
+    <script src="../lib/fullcalendar/fullcalendar.js"></script>
+
+    <script src="../js/shamcey.js"></script>
+    <script>
+      $(function() {
+        'use strict';
+
+        $('#fullCalendar').fullCalendar({
+          header: {
+            left:   'prev',
+            center: 'title',
+            right:  'today next'
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

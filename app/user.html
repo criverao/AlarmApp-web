@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>AlarmApp</title>
+
+    <!-- Vendor css -->
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shamcey.css">
+  </head>
+
+  <body>
+
+    <div class="sh-logopanel">
+      <img width="60px" src="../img/clock_retro.png"/>
+      <a href="" class="sh-logo-text">AlarmApp</a>
+      <!--<a id="navicon" href="" class="sh-navicon d-none d-xl-block"><i class="icon ion-navicon"></i></a>-->
+      <a id="naviconMobile" href="" class="sh-navicon d-xl-none"><i class="icon ion-navicon"></i></a>
+    </div>
+
+    <div class="sh-sideleft-menu" >
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <i class="icon ion-ios-bell tx-24 tx-orange"></i>
+            <span>Eventos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="calendar.html" class="nav-link">
+            <i class="icon ion-android-calendar tx-orange"></i>
+            <span>Calendario</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="map.html" class="nav-link">
+            <i class="icon ion-android-map tx-orange"></i>
+            <span>Mapa</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link active">
+            <i class="icon ion-android-person tx-orange"></i>
+            <span>Usuario</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link">
+            <i class="icon ion-android-exit tx-orange"></i>
+            <span>Salir</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sh-headpanel">
+
+      <div class="sh-headpanel-left">
+        <div>
+          <h6 class="tx-inverse tx-15 ml-3">Información de usuario</h6>
+        </div>
+      </div>
+
+      <div class="sh-headpanel-right">
+        <div>
+          <h6 class="tx-inverse tx-15 mr-3">John Doe </h6>
+        </div><!-- media-body -->
+        <div class="dropdown dropdown-profile">
+          <a href="" data-toggle="dropdown" class="dropdown-link">
+            <img src="../img/img1.jpg" class="wd-60 rounded-circle" alt="">
+          </a>
+        </div>
+      </div><!-- sh-headpanel-right -->
+    </div><!-- sh-headpanel -->
+
+    <div class="sh-mainpanel">
+
+      <div class="sh-pagetitle">
+
+        <div class="input-group">
+
+        </div>
+
+        <div class="sh-pagetitle-left">
+          <div class="sh-pagetitle-title">
+            <h5 class="tx-gray-700">Usuario</h5>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sh-pagebody">
+        <div class="card bd-white">
+          <div class="card-body pd-30 pd-md-60">
+
+
+            <div class="sh-pagebody">
+
+              <div class="row row-sm">
+
+                <div class="col-9">
+                  <div class="card bd-primary">
+                    <div class="tx-gray-700 h6">
+                      Información de Usuario
+                    </div>
+                    <div class="card-body">
+                      <div class="form-group row align-items-center">
+                        <label class="mg-b-0 col-3 tx-right">Nombre:</label>
+                        <div class="col-6">
+                          <input type="text" class="form-control" placeholder="Enter name" value="John">
+                        </div>
+                      </div>
+                      <div class="form-group row align-items-center">
+                        <label class="mg-b-0 col-3 tx-right">Correo:</label>
+                        <div class="col-6">
+                          <input type="email" class="form-control" placeholder="Enter email" value="johndoe@mydomain.com">
+                        </div>
+                      </div>
+                      <div class="form-group row align-items-center">
+                        <label class="mg-b-0 col-3 tx-right">Celular:</label>
+                        <div class="col-6">
+                          <input type="text" class="form-control" placeholder="Enter celular" value="311 200 3456">
+                        </div>
+                      </div>
+
+                      <button class="btn btn-success pd-x-20 mg-r-2 rounded-5">Actualizar</button>
+
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="card bd-primary mg-t-20">
+                    <div class="tx-gray-700 h6">
+                      Cambio de Contraseña
+                    </div>
+                    <div class="card-body">
+
+                      <form action="user.html" data-parsley-validate>
+
+                        <div class="form-group row align-items-center">
+                          <label class="mg-b-0 col-3 tx-right">Actual:</label>
+                          <div class="col-6">
+                            <input type="text" class="form-control" name="password" placeholder="password" value="Ingresa tu contraseña actual" required>
+                          </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                          <label class="mg-b-0 col-3 tx-right">Nueva:</label>
+                          <div class="col-6">
+                            <input type="text" class="form-control" name="password1" placeholder="password1" value="Ingresa tu nueva contraseña" required>
+                          </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                          <label class="mg-b-0 col-3 tx-right">Confirmar:</label>
+                          <div class="col-6">
+                            <input type="text" class="form-control" name="password2" placeholder="password2" value="Confirma tu nueva contraseña" required>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-success pd-x-20 mg-r-2 rounded-5">Actualizar contraseña</button>
+
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <div class="card bd-primary">
+                    <div class="tx-gray-700 h6 text-center">
+                      Foto de perfil
+                    </div>
+                    <div class="card-body tx-center">
+                      <img src="../img/avatar.png" class="wd-100 rounded-0" alt="">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <hr class="mg-y-30">
+
+            </div><!-- sh-pagebody -->
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/popper.js/popper.js"></script>
+    <script src="../lib/bootstrap/bootstrap.js"></script>
+    <script src="../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../lib/select2/js/select2.min.js"></script>
+    <script src="../lib/parsleyjs/parsley.js"></script>
+
+    <script src="../js/shamcey.js"></script>
+    <script>
+      $(function(){
+        'use strict';
+        $('.select2').select2({
+          minimumResultsForSearch: Infinity
+        });
+
+        $('#selectForm').parsley();
+      })
+    </script>
+  </body>
+</html>
